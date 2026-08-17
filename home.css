@@ -19,7 +19,7 @@
         justify-content: space-around;
         align-items: center;
         padding: 20px,50px;
-        
+        height: 80px;
         width: 100%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
      }
@@ -53,9 +53,10 @@
         align-items: center;
         gap: 50px;
         min-height: 100vh;
-        padding: 120px 8% 60px;
+        padding: 0px 9% 70px;
         color: aliceblue;
         overflow: hidden;
+        height: 100vh;
      }
      #home::before {
         content: "";
@@ -78,6 +79,30 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin-top: 0px;
+     }
+     .social-icon{
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+     }
+     .social-icon a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border: 2px solid lime;
+      border-radius: 50px;
+      transition: 0.3s;
+     }
+     .social-icon a:hover{
+      background: rgb(68, 108, 68);
+      box-shadow: 0 0 19px rgba(0, 255, 0, 0.6);
+     }
+     .social-icon a img{
+      width: 30px;
+      height: 30px;
      }
      .content-home{
         text-shadow: 2px 2px 8px rgba(234, 231, 239, 0.8);
@@ -152,13 +177,13 @@
         justify-content: center;
         color: #e2e8f0;
         text-align: center;
-        border: 2px solid yellow;
         min-height: 100vh;
-        padding: 100px 50px;   
+        padding: 30px 50px;  
+        margin-top: 60px; 
     }
     .sec-about div{
         width:100% ;
-       /* max-width: 700px;*/
+        
         
     }
     .sec-about h1{
@@ -186,7 +211,7 @@
         font-size: 1.3rem;
         line-height: 1.8;
         margin: 30px auto 40px auto; 
-        border:1px solid lime;
+       border: 2px solid rgba(0,256, 0, 0.05);
         border-radius: 10px;
         display: flex;
         align-items: center;
@@ -195,7 +220,15 @@
         gap: 20px;
         padding: 20px 30px;
         max-width: 900px;
-        
+        transform: translateY(0);
+        transition: all 0.3s ease;
+   
+    }
+    .about-text:hover{
+      border-color:lime ;
+     cursor: pointer;
+     box-shadow: 0 0 20px rgb(0, 255, 0,0.4);
+     transform: translateY(-8px);
     }
     .about-text img{
         width: 100px;
@@ -203,6 +236,7 @@
         border: 3px solid lime;
         border-radius: 50px;
         background: blue;
+       
         
 
     }
@@ -219,4 +253,169 @@
         border-radius: 2px;
         
     }
+    .cards{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+       margin: 0px auto 30px auto; 
+    }
+    .edu-card{
+      border: 2px solid rgba(0,256, 0, 0.05);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 300px;
+      height: 200px;
+      line-height: 1.8; 
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 20px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      transform: translateY(0);
+       
+
+    }
+    .edu-card:hover{
+     border-color:lime ;
+     cursor: pointer;
+     box-shadow: 0 0 20px rgb(0, 255, 0,0.4);
+     transform: translateY(-8px);
+    }
+    .edu-card span{
+      color: lime;
+    }
+    h3{
+      color: lime;
+    }
+    .skill-section{
+      text-align: center;
+      padding: 60px 20px;
+      color: #f0eeee;
+      height: 100vh;
+      
+    }
+   .skill-section hr{
+      width: 180px;
+      height: 3px;
+      background: lime;
+      border: none;
+      margin: 10px auto;
+   }
+   .skill-section h1{ 
+      margin: 15px 0;
+      font-size: 2.8rem;
+   }
+   
+   .skill-section > div{
+      width: 50%;
+      margin:  30px auto 0 auto;
+   }
+   
+   .skill{
+      margin: 25px 0;
+      
+   }
+   .skill h3{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+      margin: 0 0 8px 0;
+      text-transform: uppercase;
+   }
+   .skill h3 span{
+      font-weight: bold;
+   }
+   .progress{
+      width: 100%;
+      height: 10px;
+      background: #222;
+      border-radius: 30px;
+      
+   }
+   .progress-bar{
+      height: 100%;
+      background: lime;
+      border-radius: 10px;
+      
+   }
+   .about-projects {
+    display: flex;
+    justify-content: center;
+    color: #e2e8f0;
+    text-align: center;
+    min-height: 100vh;
+    padding: 30px 50px;
+    margin-top: 60px;
+}
+
+.about-projects h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.hrz {
+    border: none;
+    height: 2px;
+    width: 250px;
+    background: lime;
+    margin: 10px auto;
+    border-radius: 2px;
     
+}
+
+.cardsa {
+   margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+   
+}
+
+.cardx {
+   border: 2px solid rgba(0,256, 0, 0.05);
+   background: rgba(0,256, 0, 0.05);
+
+    width: 420px;
+    height: 310px;
+    padding: 20px;
+    border-radius: 15px;
+     transition: all 0.3s ease;
+}
+.cardx img{
+   width: 100% ;
+   height: 200px;
+   margin-top: 5px;
+   border: 1px solid blue;
+   border-radius: 10px;
+   margin-bottom: 10px;
+   
+   
+
+}
+ .cardx:hover{ 
+   border:2px solid lime;
+   transform: translateY(-10px);
+   box-shadow: 0 0 25px rgba(0, 255, 0, 0.5);
+   background: rgba(0,255, 0,0.1);
+   cursor: pointer;
+
+}
+.cardx a{
+   text-decoration: none;
+   margin-top: 20px;
+   color: rgb(232, 236, 232);
+   border-radius: 8px;
+   padding: 3px;
+   font-weight: bold;
+   
+}
+.cardx a:hover{
+   text-decoration: underline;
+   color: rgb(0, 34, 255);
+}
+
+  

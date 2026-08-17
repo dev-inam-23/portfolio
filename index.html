@@ -13,11 +13,11 @@
         <h1>portfolio.</h1>
         <nav>
             <ul>
-                <li><a href="Home"> Home</a></li>
-                <li><a href="About">About Us</a></li>
-                <li><a href="skills">Skills</a></li>
-                <li><a href="project">Projects</a></li>
-                <li><a href="contact">Contact Us</a></li>
+                <li><a href="#home"> Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -32,15 +32,16 @@
                 using HTML, CSS and JavaScript.</p>
         </div>
         <div class="button-group">
-            <button><a href="contact">Hire Me</a></button>
-            <button><a href="project">View Projects</a></button>
+            <button><a href="#contact">Hire Me</a></button>
+            <button><a href="#project">View Projects</a></button>
         </div>
+        <div class="social-icon"><a href=""><img src="./image/insta.png" alt=""></a><a href=""><img src="./image/github.jpg" alt=""></a><a href=""><img src="./image/yus.avif" alt=""></a></div>
     </div>
 
    </section>
 
    <!--section about me-->
-    <section class="sec-about">
+    <section class="sec-about" id="about">
         <div>
         <hr class="big-hr">
         <h1>About Me</h1>
@@ -51,8 +52,10 @@
         </p>
         <h2 class="h2">Education</h2>
         <hr class="small-line">
-        <div class="edu-card">
-            <h3> Matriculation - science</h3>
+
+        <div class="cards">
+            <div class="edu-card">
+            <h3>Matric</h3>
             <p>Malakand Public School & College Dargai.</p>
             <span>2020-2022</span>
         </div>
@@ -67,8 +70,67 @@
             <span>2025-2026</span>
         </div>
         </div>
+        </div>
     </section>
 
+           <!--skills-->
+
+        <section class="skill-section" id="skills">
+          <div>
+            <hr>
+            <h1>Skills</h1>
+            <hr>
+            <div>
+                <div class="skill">
+                    <h3>html <span>90%</span></h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="skill">
+                    <h3>css <span>60%</span></h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill">
+                    <h3>javascript <span>40%</span></h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 40%;"></div>
+                    </div>
+                </div>
+                 
+            <div class="skill">
+                    <h3>react.js <span>10%</span></h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 10%;"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <!--projects section-->
+
+        <section class="about-projects" id="project">
+            <div>
+                 <hr class="hrz" >
+            <h1>Projects</h1>
+            <hr class="hrz">
+           <div class="cardsa" >
+            <div class="cardx"> <h3>portfolio</h3><img src="./image/ims.webp" alt=""><a href="http://">View project</a></div>
+            <div class="cardx"><h3>portfolio</h3><img src="./image/imt.jpg" alt=""><a href="http://">View project</a></div>
+            <div class="cardx"><h3>portfolio</h3><img src="./image/inam.jpg" alt=""><a href="http://">View project</a></div>
+            <div class="cardx"><h3>portfolio</h3><img src="./image/usd.png" alt=""><a href="http://">View project</a></div>
+            <div class="cardx"><h3>portfolio</h3><img src="./image/webs.webp" alt=""><a href="http://">View project</a></div>
+            <div class="cardx"><h3>portfolio</h3><img src="./image/hmnx.jpg" alt=""><a href="http://">View project</a></div>
+           </div>
+           </div>
+        </section>
    
 </body>
 </html>
