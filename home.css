@@ -12,14 +12,15 @@
      body{
         font-family: "Poppins", sans-serif;
          background: #0a0f1a;
+         padding: 20px;
         
      }
      header{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        padding: 20px,50px;
-        
+        gap: 20px;
+        padding: 20px 50px;
         width: 100%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
      }
@@ -45,6 +46,112 @@
       nav a:hover{
         color:lime;
         font-size: 17px;
+     }
+
+     @media (max-width: 900px) {
+        header {
+           flex-direction: column;
+           padding: 20px 20px 15px;
+           text-align: center;
+        }
+
+        h1 {
+           padding-left: 0;
+        }
+
+        nav ul {
+           padding-right: 0;
+           gap: 15px 20px;
+        }
+
+        #home {
+           flex-direction: column;
+           justify-content: center;
+           text-align: center;
+           padding: 100px 6% 50px;
+        }
+
+        .content-column {
+           align-items: center;
+           text-align: center;
+        }
+
+        .home-image {
+           width: min(360px, 70vw);
+           height: 420px;
+        }
+
+        .sec-about {
+           padding: 80px 25px;
+        }
+
+        .about-text {
+           flex-direction: column;
+           text-align: center;
+        }
+     }
+
+     @media (max-width: 600px) {
+        body {
+           padding: 12px;
+        }
+
+        header {
+           padding: 18px 12px 14px;
+        }
+
+        nav ul {
+           gap: 10px 14px;
+        }
+
+        nav a {
+           font-size: 15px;
+        }
+
+        .content-home p:first-child {
+           font-size: 14px;
+           letter-spacing: 1.5px;
+        }
+
+        .content-home h2 {
+           font-size: clamp(2.1rem, 12vw, 3rem);
+        }
+
+        .content-home h3 {
+           font-size: clamp(1.2rem, 7vw, 1.8rem);
+        }
+
+        .content-home p {
+           font-size: 16px;
+        }
+
+        .button-group {
+           justify-content: center;
+        }
+
+        .button-group button {
+           width: 100%;
+           max-width: 220px;
+        }
+
+        .big-hr,
+        .nd-hr {
+           width: 220px;
+        }
+
+        .sec-about h1 {
+           font-size: 2.2rem;
+        }
+
+        .about-text {
+           padding: 18px 16px;
+           font-size: 1rem;
+        }
+
+        .about-text img {
+           width: 80px;
+           height: 80px;
+        }
      }
      #home{
         position: relative;
@@ -218,5 +325,107 @@
         margin: 10px auto;
         border-radius: 2px;
         
+    }
+
+    @media (max-width: 900px) {
+        header {
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        h1 {
+            padding-left: 0;
+        }
+
+        nav ul {
+            padding-right: 0;
+        }
+
+        #home {
+            flex-direction: column;
+            text-align: center;
+            padding: 100px 6% 50px;
+        }
+
+        .content-column {
+            align-items: center;
+        }
+
+        .home-image {
+            width: min(360px, 75vw);
+            height: 420px;
+        }
+
+        .sec-about {
+            padding: 80px 25px;
+        }
+
+        .about-text {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 600px) {
+        body {
+            padding: 12px;
+        }
+
+        header {
+            padding: 18px 12px;
+        }
+
+        nav ul {
+            gap: 10px 16px;
+        }
+
+        nav a {
+            font-size: 15px;
+        }
+
+        .content-home p:first-child {
+            font-size: 14px;
+            letter-spacing: 1.5px;
+        }
+
+        .content-home h2 {
+            font-size: clamp(2rem, 12vw, 3rem);
+        }
+
+        .content-home h3 {
+            font-size: clamp(1.2rem, 7vw, 1.8rem);
+        }
+
+        .content-home p {
+            font-size: 16px;
+        }
+
+        .button-group {
+            justify-content: center;
+        }
+
+        .button-group button {
+            width: 100%;
+            max-width: 220px;
+        }
+
+        .big-hr,
+        .nd-hr {
+            width: 220px;
+        }
+
+        .sec-about h1 {
+            font-size: 2.2rem;
+        }
+
+        .about-text {
+            padding: 18px 16px;
+            font-size: 1rem;
+        }
+
+        .about-text img {
+            width: 80px;
+            height: 80px;
+        }
     }
     
