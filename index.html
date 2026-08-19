@@ -13,11 +13,11 @@
         <h1>portfolio.</h1>
         <nav>
             <ul>
-                <li><a href="Home"> Home</a></li>
-                <li><a href="About">About Us</a></li>
-                <li><a href="skills">Skills</a></li>
-                <li><a href="project">Projects</a></li>
-                <li><a href="contact">Contact Us</a></li>
+                <li><a href="#home"> Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -32,15 +32,16 @@
                 using HTML, CSS and JavaScript.</p>
         </div>
         <div class="button-group">
-            <button><a href="contact">Hire Me</a></button>
-            <button><a href="project">View Projects</a></button>
+            <button><a href="#contact">Hire Me</a></button>
+            <button><a href="#project">View Projects</a></button>
         </div>
+        <div class="social-icon"><a href="inamullah32735"><img src="./image/insta.png" alt="Instagram"></a><a href="https://github.com/dev-inam-23"><img src="./image/github.jpg" alt="Github"></a><a href="Inam Ullah"><img src="./image/yus.avif" alt="linkedin"></a></div>
     </div>
 
    </section>
 
    <!--section about me-->
-    <section class="sec-about">
+    <section class="sec-about" id="about">
         <div>
         <hr class="big-hr">
         <h1>About Me</h1>
@@ -51,8 +52,10 @@
         </p>
         <h2 class="h2">Education</h2>
         <hr class="small-line">
-        <div class="edu-card">
-            <h3> Matriculation - science</h3>
+
+        <div class="cards">
+            <div class="edu-card">
+            <h3>Matric</h3>
             <p>Malakand Public School & College Dargai.</p>
             <span>2020-2022</span>
         </div>
@@ -67,8 +70,161 @@
             <span>2025-2026</span>
         </div>
         </div>
+        </div>
     </section>
 
-   
+    <!--skills-->
+<section class="skill-section" id="skills">
+  <hr>
+  <h1>Skills</h1>
+  <hr>
+
+  <div class="skills-wrapper"> 
+    <div class="skill">
+        <h3>html <span>90%</span></h3>
+        <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+    </div>
+
+    <div class="skill">
+        <h3>css <span>60%</span></h3>
+        <div class="progress"><div class="progress-bar" style="width: 60%;"></div></div>
+    </div>
+
+    <div class="skill">
+        <h3>javascript <span>40%</span></h3>
+        <div class="progress"><div class="progress-bar" style="width: 40%;"></div></div>
+    </div>
+
+    <div class="skill">
+        <h3>react.js <span>10%</span></h3>
+        <div class="progress"><div class="progress-bar" style="width: 10%;"></div></div>
+    </div>
+  </div>
+</section>
+
+        <!--projects section-->
+
+        <section class="about-projects" id="project">
+            <div>
+                 <hr class="hrz" >
+            <h1>Projects</h1>
+            <hr class="hrz">
+           <div class="cardsa" >
+            <div class="cardx"> <h3>portfolio</h3><img src="./image/ims.webp" alt=""><a href="http://">View project</a></div>
+            <div class="cardx"><h3>portfolio</h3><img src="./image/imt.jpg" alt=""><a href="http://">View project</a></div>
+            <div class="cardx"><h3>portfolio</h3><img src="./image/inam.jpg" alt=""><a href="http://">View project</a></div>
+            <div class="cardx"><h3>portfolio</h3><img src="./image/usd.png" alt=""><a href="http://">View project</a></div>
+            <div class="cardx"><h3>portfolio</h3><img src="./image/webs.webp" alt=""><a href="http://">View project</a></div>
+            <div class="cardx"><h3>portfolio</h3><img src="./image/hmnx.jpg" alt=""><a href="http://">View project</a></div>
+           </div>
+           </div>
+        </section>
+
+              <!--contact me-->
+        <section class="contact-section" id="contact">
+  <hr>
+  <h1>Contact Me</h1>
+  <hr>
+
+  <div class="contact-wrapper">
+    
+    <!-- Left Info -->
+    <div class="contact-info">
+      <h3>Get In Touch</h3>
+      <p>Feel free to contact me for any project or collaboration. I will get back to you as soon as possible.</p>
+      
+      <div class="info-item">
+        📧 <a href="mailto:inam956485@gmail.com">inam956485@gmail.com</a>
+      </div>
+      <div class="info-item">
+        📱 <a href="tel:+923479054603">+92 347 905 4603</a>
+      </div>
+      <div class="info-item">
+        📍 <span>Dargai, Khyber Pakhtunkhwa, Pakistan</span>
+      </div>
+    </div>
+
+    <!-- Right Form -->
+    <form class="contact-form">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter your name" required>
+      </div>
+      
+      <div class="form-group">
+        <label>Your Email</label>
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+      
+      <div class="form-group">
+        <label>Subject</label>
+        <input type="text" placeholder="Enter subject" required>
+      </div>
+      
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Write your message..." required></textarea>
+      </div>
+      
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+   <!--footer-->
+
+   <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Inam Ullah</h3>
+          <p>Frontend Developer | Creating modern and responsive websites</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/inamullah32735" title="Instagram"><img src="./image/insta.png" alt="Instagram"></a>
+            <a href="https://github.com/dev-inam-23" title="GitHub"><img src="./image/github.jpg" alt="Github"></a>
+            <a href="https://linkedin.com/in/inam-ullah" title="LinkedIn"><img src="./image/yus.avif" alt="LinkedIn"></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#contact">Web Design</a></li>
+            <li><a href="#contact">Web Development</a></li>
+            <li><a href="#contact">Responsive Design</a></li>
+            <li><a href="#contact">Frontend Development</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p><strong>Email:</strong> <a href="mailto:inam956485@gmail.com">inam956485@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+923479054603">+92 347 905 4603</a></p>
+          <p><strong>Location:</strong> Dargai, KP, Pakistan</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Inam Ullah. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#privacy">Privacy Policy</a>
+          <span>•</span>
+          <a href="#terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+   </footer>
+   <script src="index.js"></script>
 </body>
 </html>
